@@ -16,7 +16,7 @@ LOG_LEVEL = os.environ.get('LOG_LEVEL', 'INFO')
 
 def _logger():
     '''
-    Setup logger format, level, and handler.
+    Setup logger format, level, and handler.  
 
     RETURNS: log object
     '''
@@ -66,7 +66,7 @@ def health():
 @APP.route('/auth', methods=['POST'])
 def auth():
     """
-    Create JWT token based on email. test
+    Create JWT token based on email.
     """
     request_data = request.get_json()
     email = request_data.get('email')
